@@ -10,6 +10,8 @@ import plotly.io as pio
 import geopandas as gpd
 import plotly.graph_objects as go
 
+
+
 df = pd.read_csv('US Police shootings in from 2015-22.csv')
 df2 = pd.read_csv('Unemployment in America Per US State.csv')
 
@@ -97,21 +99,21 @@ gekozen_knoppen = st.selectbox('**Welke plot wil je zien?**', options = knoppen)
 
 if gekozen_knoppen == 'Number of Shootings per Year':
 
-  st.plotly_chart(fig1, use_container_width=True)
+  st.plotly_chart(fig1)
 
 if gekozen_knoppen == 'Number of Cumulative Shootings per Year':
 
-  st.plotly_chart(fig2, use_container_width=True)
+  st.plotly_chart(fig2)
 
 if gekozen_knoppen == 'Number of Shootings per Month per Year':
 
-  st.plotly_chart(fig3, use_container_width=True)
+  st.plotly_chart(fig3)
 
 if gekozen_knoppen == 'Heatmap Shootings per Year and Month':
 
-  st.plotly_chart(fig4, use_container_width=True)
+  st.plotly_chart(fig4)
 
 st.markdown('**Tree Map**')
-st.plotly_chart(fig5, use_container_width=True)
+st.plotly_chart(fig5)
 
 
