@@ -11,7 +11,7 @@ import geopandas as gpd
 import plotly.graph_objects as go
 
 df = pd.read_csv('US Police shootings in from 2015-22.csv')
-df2 = pd.read_csv('Unemployment_in_America_Per_US_State.csv')
+df2 = pd.read_csv('Unemployment in America Per US State.csv')
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
