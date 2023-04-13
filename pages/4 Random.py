@@ -89,27 +89,29 @@ fig5 = px.treemap(df3,
                  color='Occurences',
                  color_continuous_scale='YLOrRd')
 
+st.markdown('**Verschillende Grafieken Voor Schietpartijen**')
+
 knoppen = ['Number of Shootings per Year','Number of Cumulative Shootings per Year','Number of Shootings per Month per Year','Heatmap Shootings per Year and Month',]
 
 gekozen_knoppen = st.selectbox('**Welke plot wil je zien?**', options = knoppen)
 
-if gekozen_knoppen == 'Number of Shootings per Year'
+if gekozen_knoppen == 'Number of Shootings per Year':
 
   st.plotly_chart(fig1, use_container_width=True)
 
-if gekozen_knoppen == 'Number of Cumulative Shootings per Year'
+if gekozen_knoppen == 'Number of Cumulative Shootings per Year':
 
   st.plotly_chart(fig2, use_container_width=True)
 
-if gekozen_knoppen == 'Number of Shootings per Month per Year'
+if gekozen_knoppen == 'Number of Shootings per Month per Year':
 
   st.plotly_chart(fig3, use_container_width=True)
 
-if gekozen_knoppen == 'Heatmap Shootings per Year and Month'
+if gekozen_knoppen == 'Heatmap Shootings per Year and Month':
 
   st.plotly_chart(fig4, use_container_width=True)
 
-
+st.markdown('**Tree Map**')
 st.plotly_chart(fig5, use_container_width=True)
 
 
