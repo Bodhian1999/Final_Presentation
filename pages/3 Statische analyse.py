@@ -9,7 +9,7 @@ import numpy as np
 import plotly.io as pio
 import geopandas as gpd
 import plotly.graph_objects as go
-
+import statsmodels.api as sm
 
 df = pd.read_csv("US Police shootings in from 2015-22.csv")
 df2 = pd.read_csv('Unemployment in America Per US State.csv')
