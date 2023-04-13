@@ -88,3 +88,15 @@ fig5 = px.treemap(df3,
                  values='Occurences',
                  color='Occurences',
                  color_continuous_scale='YLOrRd')
+
+st.plotly_chart(fig1, use_container_width=True)
+
+st.plotly_chart(fig2, use_container_width=True)
+
+st.plotly_chart(fig3, use_container_width=True)
+
+st.plotly_chart(fig4, use_container_width=True)
+
+st.plotly_chart(fig5, use_container_width=True)
+
+
