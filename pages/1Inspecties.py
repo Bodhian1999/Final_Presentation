@@ -108,7 +108,7 @@ with col1:
              log_y=True,
              range_y=[1,10000],
              color_discrete_map={'Male':'lightblue','Female':'pink'})
-        fig2.update_layout(title={'text': "Victim's Gender",'x':0.5},
+        fig2.update_layout(title={'text': "Victim's Gender"},
                   xaxis_title="Gender",
                   yaxis_title="Total",
                   showlegend=False)
@@ -123,7 +123,7 @@ with col1:
              log_y=True,
              range_y=[1,10000])
 
-        fig3.update_layout(title={'text': "Sign of Mental Illness",'x':0.5},
+        fig3.update_layout(title={'text': "Sign of Mental Illness"},
                   xaxis_title='Sign of Mental Illness',
                   yaxis_title='Occurences',
                   showlegend=False)
@@ -137,7 +137,7 @@ with col1:
              color='index',
              log_y=True)
 
-        fig4.update_layout(title={'text': "",'x':0.5},
+        fig4.update_layout(title={'text': "Types of Weapons",},
                   xaxis_title='Weapon Type',
                   yaxis_title='Occurances',
                   showlegend=False)
@@ -152,7 +152,7 @@ with col1:
              log_y=True,
              range_y=[1,10000])
 
-        fig5.update_layout(title={'text': "Manner of Death",'x':0.5},
+        fig5.update_layout(title={'text': "Manner of Death"},
                   xaxis_title="Manner of Death",
                   yaxis_title="Occurences",
                   showlegend=False)
@@ -165,7 +165,7 @@ with col1:
              color='index',
              text='counts')
 
-        fig6.update_layout(title={'text': "Fleeing",'x':0.5},
+        fig6.update_layout(title={'text': "Fleeing"},
                   xaxis_title="Manner of Death",
                   yaxis_title="Occurences",
                   showlegend=False)
@@ -206,7 +206,7 @@ with col2:
     if gekozen_knoppen2 == "Victim's Age Compared by Gender":
         fig7 = px.violin(df, y='age', color='gender', box=True, color_discrete_map={'Male':'lightblue','Female':'pink'})
 
-        fig7.update_layout(title={'text': "Victim's Age Compared by Gender ",'x':0.5},
+        fig7.update_layout(title={'text': "Victim's Age Compared by Gender "},
                   xaxis_title="Gender",
                   yaxis_title="Age",
                   height=400,
