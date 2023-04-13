@@ -45,7 +45,7 @@ fig1 = px.bar(df.groupby(by='year').count().date,
 fig1.update_layout(title={'text': 'Number of Shootings per Year'},
                   showlegend=False,
                   xaxis_title='Year',
-                  yaxis_title='Count')
+                  yaxis_title='Occurences')
 
 df_year_month = df.groupby(by=['year','month']).count().date
 df_year_month = df_year_month.reset_index().pivot('year','month','date').transpose()
@@ -54,7 +54,7 @@ fig2 = px.line(np.cumsum(df_year_month),markers=True)
 
 fig2.update_layout(title={'text': 'Number of Cumulative Shootings per Year'},
                   xaxis_title='Year',
-                  yaxis_title='Count',
+                  yaxis_title='Occurences',
                   legend_title='Year')
 
 df_year_month = df.groupby(by=['year','month']).count().date
@@ -64,7 +64,7 @@ fig3 = px.line(df_year_month,markers=True)
 
 fig3.update_layout(title={'text': 'Number of Shootings per Month per Year'},
                   xaxis_title='Year',
-                  yaxis_title='Count',
+                  yaxis_title='Occurences',
                   legend_title='Year')
 
 fig4 = px.density_heatmap(df, x='year', y='month')
@@ -72,7 +72,7 @@ fig4 = px.density_heatmap(df, x='year', y='month')
 fig4.update_layout(title={'text': 'Number of Shootings per Year and Month'},
                   xaxis_title='Year',
                   yaxis_title='Month',
-                  coloraxis_colorbar=dict(title="Occurances"))
+                  coloraxis_colorbar=dict(title="Occurences"))
 
 
 df_year_state = df.groupby(by=['year','state']).count().date
