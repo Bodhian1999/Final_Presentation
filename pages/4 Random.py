@@ -89,7 +89,7 @@ fig5 = px.treemap(df3,
                  color='Occurences',
                  color_continuous_scale='YLOrRd')
 
-st.markdown('**Verschillende Grafieken Voor Schietpartijen**')
+st.markdown('**Verschillende Grafieken Voor Schietpartijen per Jaar**')
 
 knoppen = ['Number of Shootings per Year','Number of Cumulative Shootings per Year','Number of Shootings per Month per Year','Heatmap Shootings per Year and Month',]
 
