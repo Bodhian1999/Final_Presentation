@@ -40,7 +40,7 @@ pio.templates.default = "plotly"
 fig1 = px.bar(df.groupby(by='year').count().date,
               title='Number of Shootings by year')
 
-fig1.update_layout(title={'text': 'Number of Shootings per Year','x':0.5},
+fig1.update_layout(title={'text': 'Number of Shootings per Year'},
                   showlegend=False,
                   xaxis_title='Year',
                   yaxis_title='Count')
@@ -50,7 +50,7 @@ df_year_month = df_year_month.reset_index().pivot('year','month','date').transpo
 
 fig2 = px.line(np.cumsum(df_year_month),markers=True)
 
-fig2.update_layout(title={'text': 'Number of Cumulative Shootings per Year','x':0.5},
+fig2.update_layout(title={'text': 'Number of Cumulative Shootings per Year'},
                   xaxis_title='Year',
                   yaxis_title='Count',
                   legend_title='Year')
@@ -60,14 +60,14 @@ df_year_month = df_year_month.reset_index().pivot('year','month','date').transpo
 
 fig3 = px.line(df_year_month,markers=True)
 
-fig3.update_layout(title={'text': 'Number of Shootings per Month per Year','x':0.5},
+fig3.update_layout(title={'text': 'Number of Shootings per Month per Year'},
                   xaxis_title='Year',
                   yaxis_title='Count',
                   legend_title='Year')
 
 fig4 = px.density_heatmap(df, x='year', y='month')
 
-fig4.update_layout(title={'text': 'Number of Shootings per Year and Month','x':0.5},
+fig4.update_layout(title={'text': 'Number of Shootings per Year and Month'},
                   xaxis_title='Year',
                   yaxis_title='Month',
                   coloraxis_colorbar=dict(title="Occurances"))
