@@ -58,4 +58,10 @@ ax.yaxis.set_tick_params(labelsize=14)
 ax.xaxis.set_major_locator(ticker.FixedLocator([0, 12, 24, 36, 48, 60, 72, 84, 96]))
 ax.xaxis.set_major_formatter(ticker.FixedFormatter(['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023']))
 
+# Fit a linear regression model
+X = sm.add_constant(df3['months_since_start'])
+model = sm.OLS(df3['aantal_doden_maand'], X).fit()
+
+st.write(model.summary())
+
 st.pyplot(fig, ax)
