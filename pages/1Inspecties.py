@@ -74,7 +74,7 @@ with col1:
 
     #fig.update_xaxes(categoryorder='total descending') 
     fig.update_traces(marker=dict(line=dict(width=0.5)))
-    fig.update_layout(title={'text': "Top 10 states with Killings by Law Enforcement",'x':0.5},
+    fig.update_layout(title={'text': "Top 10 states with Killings by Law Enforcement"},
                   xaxis_title="Sates",
                   yaxis_title="Total Occurences",
                   legend=dict(
