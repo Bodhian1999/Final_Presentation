@@ -93,7 +93,7 @@ with col1:
     fig.for_each_trace(lambda t: t.update(name=state_names[t.name]))
 
     st.plotly_chart(fig, use_container_width = True)
-    st.markdown('In dit plot is er te zien welke staten het meeste leiden onder burgersdoden door politieagenten')
+    st.markdown('In deze plot is er te zien welke staten het meeste leiden onder burgersdoden door politieagenten')
 
     knoppen = ['Gender', 'Sign of Mental Illness', 'Weapon', 'Manner of Death', 'Fleeing']
 
