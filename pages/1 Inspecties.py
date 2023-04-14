@@ -198,7 +198,7 @@ with col2:
     plt.gca().yaxis.set_major_formatter(tick)
 
     st.pyplot(fig, ax, use_container_width = True)
-    st.markdown('In dit plot is de werkloosheid in de VS door de jaren heen te zien')
+    st.markdown('In deze plot is de werkloosheid in de VS door de jaren heen te zien')
 
     knoppen2 = ["Victim's Age Compared by Gender"]
 
