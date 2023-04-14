@@ -52,7 +52,7 @@ with col1:
                         zoom= 2.7)
 
     fig.update_layout(mapbox_style='open-street-map', height=550)
-    st.plotly_chart(fig)
+    st.plotly_chart(fig, use_container_width=True )
 
 with col2:
     fig2 = px.choropleth(df_year_state,
@@ -63,4 +63,4 @@ with col2:
         scope="usa",
         animation_frame='year',
         title="Incidents Observed in Each State Over the Year") 
-    st.plotly_chart(fig2)
+    st.plotly_chart(fig2, use_container_width=True )
